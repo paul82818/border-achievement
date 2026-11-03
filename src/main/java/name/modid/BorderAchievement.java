@@ -49,7 +49,8 @@ public class BorderAchievement implements ModInitializer {
 			border.setCenter(Mth.floor(first.getX()) + 0.5, Mth.floor(first.getZ()) + 0.5);
 			border.setSize(START_SIZE);
 			border.setDamagePerBlock(0.0);
-			border.setDamageSafeZone(0.0);
+						// Schadens-Puffer auf 0 (per Befehl, weil sich der Methodenname geändert hat)
+			server.getCommands().performPrefixedCommand(server.createCommandSourceStack(), "worldborder damage buffer 0");
 			LOGGER.info("Worldborder auf 1x1 gesetzt.");
 		}
 
