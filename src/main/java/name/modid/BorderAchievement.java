@@ -23,8 +23,8 @@ public class BorderAchievement implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	private static final double START_SIZE = 1.0;
-	private static final double NORMAL_BONUS = 1.0;      // Task + Goal
-	private static final double CHALLENGE_BONUS = 50.0;  // lila Advancements
+	private static final double NORMAL_BONUS = 2.0;      // 1 Block Ring rundherum
+private static final double CHALLENGE_BONUS = 100.0; // 50 Blöcke pro Seite
 	private static final double UNSET_BORDER_THRESHOLD = 1.0E7; // Vanilla-Border ist ~6.0E7
 
 	@Override
